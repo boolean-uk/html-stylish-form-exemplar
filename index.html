@@ -4,10 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stylish form</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
   </head>
   <body>
+    <div class="container">
+      <form>
+        <h1 class="form-title">Say hello!</h1>
 
+        <label>
+          <span class="field-text">Your Name</span>
+          <input type="text" name="name" placeholder="Enter your name" />
+        </label>
+
+        <label>
+          <span class="field-text">Email</span>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+        </label>
+
+        <label>
+          <span class="field-text">Needed Services</span>
+          <select name="services">
+            <option value="">Choose a service</option>
+            <option>Web page</option>
+            <option>Web app</option>
+            <option>Backend</option>
+          </select>
+        </label>
+
+        <label>
+          <span class="field-text">Budget</span>
+          <select name="budget">
+            <option value="">Select budget</option>
+            <option>Up to £500</option>
+            <option>£1000 - £2000</option>
+            <option>£2000+</option>
+          </select>
+        </label>
+
+        <label>
+          <span class="field-text">Message</span>
+          <textarea
+            name="message"
+            placeholder="Your message here..."
+          ></textarea>
+        </label>
+
+        <input class="submit-button" type="submit" value="Submit →" />
+      </form>
+    </div>
   </body>
 </html>
